@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+}
+
+body {
+  font-size: .32rem;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+
+.gift_detail_wrap {
+  margin:0 auto;
+  max-width: 10.8rem;
+  height: 13.43rem;
+  position: relative;
+  background-color: #130D35;
+}
+
+/*
+ iPhone 6
+ */
+
+@media screen and (min-device-width: 371px) and (max-device-width:410px) {
+  .gift_detail_wrap {
+    height: 12.06rem;
+  }
+}
+
+/*
+  iPhone 5
+  */
+
+@media screen and (min-device-width: 310px) and (max-device-width:370px) {
+  .gift_detail_wrap {
+    height: 10.10rem;
+  }
+}
+
+.gift_detail_wrap img[element="wrap_top"] {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.gift_detail_wrap img[element="wrap_bottom"] {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.gift_detail_wrap img[element="share"] {
+  width: 3rem;
+  bottom: .6rem;
+  right: .7rem;
+  position: absolute;
+  z-index: 990;
+}
+
+.gift_detail_wrap img[element="close"] {
+  width: 0.25rem;
+  top: .4rem;
+  right: .4rem;
+  position: absolute;
+}
+
+#gift_detail_scroll {
+  margin-top: 16%;
+  margin-left: 12%;
+  width: 76%;
+  height: 78%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+}
+
+#gift_detail_scroll img {
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#share_wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 13.4rem;
+  top: 0;
+  position: absolute;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+}
+
+#share_mask {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=60);
+  opacity: 0.75;
+  -moz-opacity: 0.75;
+  position: absolute;
+}
+
+.share_arrow {
+  width: 4.1rem;
+  position: absolute;
+  right: .35rem;
+  top: .1rem;
+}

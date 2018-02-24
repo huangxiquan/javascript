@@ -1,0 +1,365 @@
+/*循环滚动*/
+.middle-page {
+  /*animation: middlePage 27s linear infinite;*/
+  /*-webkit-animation: middlePage 27s linear infinite;*/
+}
+
+
+.middle-page-one {
+  -webkit-animation: middlePageOne  2s linear forwards ;
+}
+
+.middle-page-two {
+  -webkit-animation: middlePageTwo  2s linear forwards ;
+}
+
+.middle-page-three {
+  -webkit-animation: middlePageThree  2s linear forwards ;
+}
+
+.middle-page-four {
+  -webkit-animation: middlePageFour  2s linear forwards ;
+}
+
+@keyframes middlePageOne {
+  100% {transform: translate(20%,0)}
+}
+
+@keyframes middlePageTwo {
+  0% {transform: translate(20%,0)}
+  100% {transform: translate(40%,0)}
+}
+
+@keyframes middlePageThree {
+  0% {transform: translate(40%,0)}
+  100% {transform: translate(60%,0)}
+}
+
+@keyframes middlePageFour {
+  0% {transform: translate(60%,0)}
+  100% {transform: translate(80%,0)}
+}
+
+@keyframes middlePage {
+  0% {transform: translate(0,0)}
+  12% {transform: translate(0,0)}
+  25% {transform: translate(20%,0)}
+  37% {transform: translate(20%,0)}
+  50% {transform: translate(40%,0)}
+  62% {transform: translate(40%,0)}
+  75% {transform: translate(60%,0)}
+  87% {transform: translate(60%,0)}
+  100% {transform: translate(80%,0)}
+}
+
+@-webkit-keyframes middlePage {
+  0% {-webkit-transform: translate(0,0)}
+  12% {-webkit-transform: translate(0,0)}
+  25% {-webkit-transform: translate(20%,0)}
+  37% {-webkit-transform: translate(20%,0)}
+  50% {-webkit-transform: translate(40%,0)}
+  62% {-webkit-transform: translate(40%,0)}
+  75% {-webkit-transform: translate(60%,0)}
+  87% {-webkit-transform: translate(60%,0)}
+  100% {-webkit-transform: translate(80%,0)}
+}
+
+/*人物遮罩上移*/
+.prospects_up {
+  animation: prospectsUp 0.5s linear forwards;
+}
+
+@keyframes prospectsUp {
+   100% {
+     transform: translate(0,-120%);
+   }
+}
+
+/*机器爪向下*/
+.middle_grab_down {
+  animation: grabDown 0.5s linear forwards;
+}
+
+@keyframes grabDown {
+  100% {transform: translate(0,90%)}
+}
+
+/*机器爪向上*/
+.middle_grab_up {
+  animation: grabUp 0.5s linear forwards;
+}
+
+@keyframes grabUp {
+  0% {
+      transform: scale(0.8,1) translate(0,90%);
+      }
+  100% {
+      transform: scale(0.8,1) translate(0,0);
+  }
+}
+
+/*机器抓收缩*/
+@keyframes grabShrink {
+  0% {bottom: -2.49rem}
+  100% {
+    transform: scale(0.8,1);
+    bottom: -2.49rem
+  }
+}
+
+.middle_grab_shrink {
+  animation: grabShrink 0.5s linear forwards;
+}
+
+
+
+/*机器爪恢复*/
+
+.middle_grab_restore {
+  animation: grabRestore 2s linear forwards;
+}
+
+@keyframes grabRestore {
+  0% {
+    transform: scale(0.8,1);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+/*内圆转动*/
+.circle_in {
+  animation: innerCircle 5s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes innerCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*扫描*/
+.scan_line {
+  animation: scanning 5s linear infinite;
+}
+
+@keyframes  scanning{
+  100% {
+    transform: translate(0,-6.6rem);
+  }
+}
+
+
+/*文字变大变小*/
+.font_size_scale{
+  animation: fontScale 0.75s linear infinite;
+}
+
+@keyframes fontScale {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.paused {
+  animation-play-state:paused;
+  -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+}
+
+
+#dialog  {
+  width: 100% ;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  background-color: transparent;
+  height: 13.34rem;
+  display: none;
+}
+
+#giftOpen {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 40;
+  background-color: rgba(7,52,100,0.8);
+  height: 13.34rem;
+  display: none;
+}
+
+#giftOpen img {
+  width: 4.5rem;
+  height: 5.1rem;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -2.25rem;
+  margin-top: -2.5rem;
+}
+
+/*传送带*/
+
+.caterpillar_top_move {
+  animation: caterpillarTop 2s linear forwards;
+  margin-left: -100%;
+}
+
+.caterpillar_bottom_move {
+  animation: caterpillarBottom 2s linear forwards;
+}
+
+@keyframes caterpillarTop {
+  100% {
+    transform: translate(50%,0);
+  }
+}
+
+@keyframes caterpillarBottom {
+  100% {
+    transform: translate(-48%,0);
+  }
+}
+
+/*手指消失*/
+.finger_out {
+  animation: fadeOut 2s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+
+.human_one_text {
+  display: none;
+}
+
+/*礼包移动*/
+.gift_move {
+  animation: giftMove 0.5s linear forwards;
+}
+
+@keyframes giftMove {
+  80% {transform: translate(-400%,-1000%)}
+  100% {transform: translate(-400%,-1000%) scale(4,4) }
+}
+
+/*礼包变大变小*/
+.gift_scale {
+  animation: giftScale 0.5s infinite ;
+}
+
+@keyframes giftScale {
+  0% {
+    transform: scale(1);
+  }
+
+
+  50% {
+    transform: scale(1.8);
+  }
+
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*手指变大变小*/
+.finger {
+  animation: fingerScale 1s infinite;
+}
+
+@keyframes fingerScale {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+/*礼物抖动*/
+.gift_shake {
+  animation: giftShake 1s infinite;
+}
+
+@keyframes giftShake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-2px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(2px);
+  }
+}
+
+/*爱心缩放*/
+.love_scale {
+  animation: loveScale 0.5s;
+}
+
+@keyframes loveScale {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}

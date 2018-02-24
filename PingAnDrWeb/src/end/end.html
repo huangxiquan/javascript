@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta http-equiv="Page-Enter" content="revealTrans(duration=12, transition=1)">
+  <title>那些女性的小秘密~</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../common/fastclick.js"></script>
+  <script type="text/javascript">
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+
+    window.addEventListener('resize', calcREM, false);
+
+    function calcREM() {
+      var html = document.documentElement;
+      var windowWidth = html.clientHeight / 13.34;
+      html.style.fontSize = (windowWidth > 133.4 ? 133.4 : windowWidth) + 'px';
+    }
+
+  </script>
+  <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="../common/share.js"></script>
+  <script src="index.js"></script>
+
+
+</head>
+<body>
+
+<p style="display: none" id="share_hidden_text"></p>
+<div style="text-align: center;">
+  <div id="share_wrap">
+    <div id="share_mask"></div>
+    <img src="../assets/image/share_gift_tip.png" class="share_arrow">
+  </div>
+
+
+  <div id="content_id" class="gift_detail_wrap">
+    <img src="../assets/image/gift_wrap_top@2x.png" element="wrap_top"/>
+    <img src="../assets/image/gift_wrap_bottom@2x.png" element="wrap_bottom"/>
+    <img src="../assets/image/bottom_share@2x.png" element="share" id="share_btn"/>
+    <div id="gift_detail_scroll">
+      <img id="gift_image"/>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>分享</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+      font-size: 50px;
+    }
+
+    body {
+      font-size: .32rem;
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    }
+
+    #share_mask {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      filter: alpha(opacity=60);
+      opacity: 0.6;
+      -moz-opacity: 0.6;
+      position: absolute;
+    }
+
+    .share_arrow {
+      width: 1.3rem;
+      position: absolute;
+      z-index: 999;
+      right: .3rem;
+      top: .5rem;
+    }
+
+  </style>
+  <script language="javascript">
+
+    calcREM();
+
+    window.addEventListener('resize', calcREM, false);
+
+    function calcREM() {
+      var html = document.documentElement;
+      var windowWidth = html.clientWidth / 7.5;
+      html.style.fontSize = (windowWidth > 75 ? 75 : windowWidth) + 'px';
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+<div id="share_mask">
+  <img src="../assets/image/share_tips@2x.png" class="share_arrow">
+</div>
+
+</body>
+</html>

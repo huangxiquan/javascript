@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript">
+    calcREM();
+
+    window.addEventListener('resize', calcREM, false);
+
+    function calcREM() {
+      var html = document.documentElement;
+      var windowWidth = html.clientWidth / 7.5;
+      html.style.fontSize = (windowWidth > 75 ? 75 : windowWidth) + 'px';
+    }
+  </script>
+  <title>平安好医生</title>
+
+</head>
+<body>
+
+<ul style="list-style: none">
+  <li><a href="main/main.html" style="text-decoration: none;font-size: .5rem">主页面</a></li>
+  <li><a href="end/end.html" style="text-decoration: none;font-size: .5rem">大礼包</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+@import "style.css";
+
+$xColor:red !default;
+$globalX:'solid' !global;
+$all-height:13rem !global;
+
+.header_content{
+  color: $xColor;
+  border-style: $globalX;
+  height: $all-height;
+  img{
+    width: 80%;
+  }
+}

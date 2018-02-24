@@ -1,0 +1,345 @@
+/*a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{*/
+  /*margin: 0px;*/
+  /*padding: 0px;*/
+/*}*/
+
+/*body{*/
+  /*font-size: 50px;*/
+/*}*/
+
+/*html{*/
+  /*font-size: 50px;*/
+/*}*/
+
+
+.loadingGif{
+  height: 13.34rem;
+  width: 100%;
+  text-align: center;
+  background: #223863;
+  position: relative;
+}
+
+.loading{
+  margin-top: 4.13rem;
+  height:2.9rem;
+}
+
+.loadingProgress{
+  position: absolute;
+  font-size: 0.25rem;
+  width: 100%;
+  top:6.4rem;
+  position: absolute;
+  height:0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+}
+.fistPageBox{
+  position: absolute;
+  background-image: url("../assets/image/firstPage_background@2x.png") ;
+  -webkit-background-size: 8.2rem 13.34rem;
+          background-size: 8.2rem 13.34rem;
+  background-repeat: no-repeat;
+  height: 12.82rem;
+  width: 8.2rem;
+  left:50%;
+  margin-left: -4.1rem;
+}
+
+.content{
+  width: 6.82rem;
+  height: 12.82rem;
+  position: relative;
+  left:50%;
+  margin-left: -3.41rem;
+  z-index:2;
+
+}
+
+.backgroundBox{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+.scanContent{
+  left: 7%;
+  margin-top: 2rem;
+  width: 86%;
+  height: 8.72rem;
+  position: absolute;
+}
+
+.scanBox{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../assets/image/scan_content@2x.png");
+  -webkit-background-size: 5.8rem 8.72rem;
+          background-size: 5.8rem 8.72rem;
+}
+
+.scanTextBox{
+
+  left: 7%;
+  margin-top: 1.9rem;
+  width: 86%;
+  height: 8.72rem;
+  position: absolute;
+  background-image: url("../assets/image/scan_box@2x.png");
+  -webkit-background-size: 5.8rem 8.72rem;
+          background-size: 5.8rem 8.72rem;
+  visibility: hidden;
+
+}
+.scienceLine{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top:3.57rem;
+}
+
+.firstPage_circular{
+  width: 2.81rem;
+  position: absolute;
+  top:3.73rem;
+  left: 1.4rem;
+  -o-animation:circularAnimation 3s linear infinite;
+     animation:circularAnimation 3s linear infinite;
+  -webkit-animation:circularAnimation 3s linear infinite; /* Safari and Chrome */
+}
+
+@-o-keyframes circularAnimation
+{
+
+  from{
+    -o-transform:rotateZ(0deg);
+       transform:rotateZ(0deg);
+  }
+  to{
+    -o-transform:rotateZ(360deg);
+       transform:rotateZ(360deg);
+  }
+
+}
+
+@keyframes circularAnimation
+{
+
+  from{
+    -webkit-transform:rotateZ(0deg);
+         -o-transform:rotateZ(0deg);
+            transform:rotateZ(0deg);
+  }
+  to{
+    -webkit-transform:rotateZ(360deg);
+         -o-transform:rotateZ(360deg);
+            transform:rotateZ(360deg);
+  }
+
+}
+
+@-webkit-keyframes circularAnimation /* Safari and Chrome */
+{
+  from{
+    -webkit-transform:rotateZ(0deg);
+  }
+  to{
+    -webkit-transform:rotateZ(360deg);
+  }
+}
+
+/*heart布局*/
+.heart{
+  position: absolute;
+  top: 6.6rem;
+  left: 2.59rem;
+  -webkit-animation: heartAnimate 1s ease infinite;    /*调用名称为heartAnimate的动画，全程1s，速度曲线是ease，无限循环播放*/
+  -o-animation: heartAnimate 1s ease infinite;
+  animation: heartAnimate 1s ease infinite;
+  width: 1.39rem;
+
+}
+
+@keyframes heartAnimate{
+  0%,100%{-webkit-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+  10%,30%{-webkit-transform: scale(0.9);-o-transform: scale(0.9);transform: scale(0.9);}
+  20%,40%,60%,80%{-webkit-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+  50%,70%{ -webkit-transform:scale(1.1); -o-transform:scale(1.1); transform:scale(1.1);}
+}
+@-webkit-keyframes heartAnimate{
+  0%,100%{-webkit-transform: scale(1);}
+  10%,30%{-webkit-transform:scale(0.9);}
+  20%,40%,60%,80%{-webkit-transform: scale(1.1);}
+  50%,70%{-webkit-transform: scale(1.1);}
+}
+
+@-o-keyframes heartAnimate{
+  0%,100%{-o-transform:scale(1);}
+  10%,30%{-o-transform: scale(0.9);}
+  20%,40%,60%,80%{-o-transform:scale(1.1);}
+  50%,70%{ -o-transform:scale(1.1);}
+}
+
+/*scanBar布局*/
+.scanBar
+{
+  width:100%;
+  height:0.8rem;
+  position:relative;
+  -o-animation:scanAnimation 5s ;
+     animation:scanAnimation 5s ;
+  -webkit-animation:scanAnimation 5s; /* Safari and Chrome */
+  -webkit-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../assets/image/scan_bar@2x.png");
+}
+
+@-o-keyframes scanAnimation
+{
+
+  0%   { -o-transform: translate(0, 0); transform: translate(0, 0); }
+  50%   { -o-transform: translate(0, 7.8rem); transform: translate(0, 7.8rem); }
+  100% { -o-transform: translate(0, 0); transform: translate(0, 0); }
+
+}
+
+@keyframes scanAnimation
+{
+
+  0%   { -webkit-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+  50%   { -webkit-transform: translate(0, 7.8rem); -o-transform: translate(0, 7.8rem); transform: translate(0, 7.8rem); }
+  100% { -webkit-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+
+}
+
+@-webkit-keyframes scanAnimation /* Safari and Chrome */
+{
+  0%   { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+  50%   { -webkit-transform: translate(0, 7.8rem); transform: translate(0, 7.8rem); }
+  100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+}
+
+
+.scanPackageBox{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.scanText{
+  display: none;
+}
+
+.show_title{
+  width: 5.3rem;
+  left: 0.3rem;
+  top: 1.34rem;
+  position: absolute;
+}
+
+.showText{
+  font-size: 0.32rem;
+  width: 5.3rem;
+  left: 0.3rem;
+  bottom: 1.6rem;
+  position: absolute;
+  height:2.9rem;
+  word-break: break-all;
+  text-align: center;
+  line-height: 0.6rem;
+}
+
+/*跑马灯*/
+
+.marqueeFooter{
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.65rem;
+  width: 5.44rem;
+}
+
+.marqueeBox{
+
+  position: relative;
+  width: 5.44rem;
+  background-image: url("../assets/image/marquee_default@2x.png");
+  -webkit-background-size: 5.44rem 1.21rem;
+          background-size: 5.44rem 1.21rem;
+  height: 1.21rem;
+}
+
+.marquee_highlight_box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  visibility: hidden;
+}
+.marquee_highlight{
+  width: 5.44rem;
+  background-image: url("../assets/image/marquee_default@2x.png");
+  -webkit-background-size: 5.44rem 1.21rem;
+          background-size: 5.44rem 1.21rem;
+  height: 1.21rem;
+}
+
+.marqueeTextBox{
+  position: absolute;
+  width: 86%;
+  height: 100%;
+  left:7%;
+  bottom: 0px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.marqueeText {
+  line-height: 1.21rem;
+  font-size: 0.28rem;
+  display: inline-block;
+  padding-left: 100%;
+  white-space: nowrap;
+  -webkit-animation: marquee 35s linear infinite;
+       -o-animation: marquee 35s linear infinite;
+          animation: marquee 35s linear infinite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  /*position: relative;*/
+}
+@-o-keyframes marquee {
+
+  0%   { -o-transform: translate(0, 0); transform: translate(0, 0); }
+  100% { -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
+}
+@keyframes marquee {
+
+  0%   { -webkit-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+  100% { -webkit-transform: translate(-100%, 0); -o-transform: translate(-100%, 0); transform: translate(-100%, 0); }
+}
+
+
+@-webkit-keyframes marquee {
+  0%   { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+  100% { -webkit-transform: translate(-100%, 0); transform: translate(-100%, 0); }
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.marqueeHidden{
+  white-space: nowrap;
+}
+

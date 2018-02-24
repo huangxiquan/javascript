@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="./cbnweekly.js"></script>
+    <script>
+        $(function () {
+            $('.nav').nav()
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Hiragino Sans GB,Microsoft YaHei,黑体,Helvetica,Arial,Tahoma,sans-serif;
+        }
+
+        .logo {
+            display: block;
+        }
+
+        header {
+            width: 960px;
+            margin: 48px auto 32px auto;
+            position: relative;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            position: absolute;
+            bottom: 0;
+            right: 120px;
+            margin-right: 32px;
+
+        }
+
+        header nav ul li {
+            float: left;
+            margin-left: 32px;
+        }
+
+        header nav .subscribe {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            border: 3px solid #24c875;
+            padding: 8px;
+            height: 99px;
+            box-sizing: border-box;
+        }
+
+        header nav .subscribe .arrow {
+            float: right;
+            fill: #24c875;
+        }
+
+        header nav .subscribe span {
+            position: absolute;
+            bottom: 8px;
+            color: #24c875;: ;
+        }
+
+        header nav ul li a {
+            color: #4a4a4a;
+            display: block;
+        }
+
+        header nav ul li a:hover {
+            color: #24c875;
+        }
+
+        header nav ul li .current {
+            color: black;
+            font-weight: bold;
+        }
+
+        header nav ul .appDownload {
+            display: none;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: absolute;
+            margin-top: 15px;
+            width: 227px;
+            border: 1px solid rgba(0,0,0,.15);
+        }
+
+        header nav ul .appDownload img {
+            display: block;
+            margin: auto;
+        }
+
+        header nav ul .appDownload .appIcon {
+            width: 48px;
+        }
+
+        header nav ul .appDownload .appLogo {
+            width: 96px;
+            margin-top: 10px;
+        }
+
+        header nav ul .appDownload .appLink {
+            width:150px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class = 'logo'>
+                <img src="//files.cbnweek.com/weekly-assets/assets/logo.svg" />
+            </a>
+            
+            <ul>
+                <li><a class="current">资讯</a></li>
+                <li><a>杂志</a></li>
+                <li>
+                    <a class="dropToggle">APP</a>
+                    <div class="appDownload dropMenu">
+                        <img class="appIcon" src="//files.cbnweek.com/weekly-assets/assets/app-icon.png" />
+                        <img class="appLogo" src="//files.cbnweek.com/weekly-assets/assets/logo.svg" />
+                        <img class="appLink" src="//files.cbnweek.com/weekly-assets/assets/app-qrcode.png">
+                        <div class="text-center">
+                            扫一扫 立即下载 <br> iOS&Android
+                        </div>
+                    </div>
+                </li>
+                <li><a>登录/注册</a></li>
+                <li>
+                    <a>
+                        <img src="//files.cbnweek.com/weekly-assets/assets/search.svg">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="subscribe">
+                <span>订阅</span>
+                <div class="arrow">
+                    <img src="svg/arrow.svg">
+                </div>
+            </a>
+
+        </nav>
+    </header>
+</body>
+</html>

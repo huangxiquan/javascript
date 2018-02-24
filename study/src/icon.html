@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .triangle {
+            width: 0px;
+            height: 0px;
+            border-left:100px solid transparent;
+            border-top: 0px solid #24c875;
+            border-right:100px solid transparent;
+            border-bottom: 200px solid blue;
+        }
+
+        .share-container {
+            position: relative;
+        }
+
+        .share-left {
+            margin-top: 50px;
+            width: 20px;
+            height: 120px;
+            border-left: 20px solid;
+            border-top: 20px solid ;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .share-right {
+            width: 140px;
+            height: 20px;
+            border-left: 10px solid;
+            border-top: 10px solid transparent;
+            border-right: 20px solid ;
+            border-bottom: 20px solid ;
+            position: absolute;
+            bottom:0;
+        }
+
+        .arrow-handle {
+            width: 50px;
+            height: 100px;
+            border-left: 0px solid gray;
+            border-top: 50px solid ;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 100px;
+            position: absolute;
+            top: 0px;
+            left: 30px;
+        }
+
+        .share-triangle {
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid;
+            border-right: 50px solid transparent;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            position: absolute;
+            top: -25px;
+            left: 125px;
+        }
+
+        .setting {
+            margin-top: 40px;
+            width: 2em;
+            height: 2em;
+            background: #2c2c2c;
+            position: relative;
+            border-radius: 1em;
+        }
+
+        .setting:after {
+            width: 1em;
+            height: 1em;
+            background: #EEEEEE;
+            position: absolute;
+            content:"";
+            top: .5em;
+            left: .5em;
+            border-radius: .5em;
+        }
+
+        .setting:before {
+            width: 2.8em;
+            height: 2.8em;
+            background: linear-gradient(0deg,transparent 39%,#2C2C2C 39%,#2C2C2C 61%, transparent 61%),linear-gradient(60deg,transparent 42%,#2C2C2C 42%,#2C2C2C 58%, transparent 58%),linear-gradient(120deg,transparent 42%,#2C2C2C 42%,#2C2C2C 58%, transparent 58%);
+            position: absolute;
+            content:"";
+            top: -.4em;
+            left: -.4em;
+            border-radius:1.4em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="triangle">
+
+    </div>
+
+    <div  class="share-container">
+        <div class="share-left">
+
+        </div>
+        <div class="share-right"></div>
+        <div class="arrow-handle"></div>
+        <div class="share-triangle" ></div>
+    </div>
+
+    <div class="setting">
+
+    </div>
+
+</body>
+</html>
